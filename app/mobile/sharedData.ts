@@ -339,6 +339,111 @@ export const places: Place[] = [
       "Mercado Artesanal",
     ],
   },
+  {
+    id: 4,
+    name: "Clínica Dental Sonrisa Perfecta",
+    description:
+      "Atención odontológica de calidad con tecnología de punta. ¡Sonríe con confianza!",
+    address: "Av. Los Próceres 456, Huancayo",
+    latitude: -12.065,
+    longitude: -75.203,
+    videoUrl: "/dentista.mp4",
+    logoUrl: "/logo.jpg",
+    type: "business",
+    category: "salud",
+    subcategory: "Clínicas Dentales",
+    isFree: false,
+    openingHours:
+      "Lunes a Viernes: 8:00 AM - 7:00 PM, Sábados: 9:00 AM - 2:00 PM",
+    photos: ["/dental/clinic1.jpg", "/dental/clinic2.jpg"],
+    differential:
+      "Ofrecemos tratamientos de última generación con un equipo altamente capacitado.",
+    studies: [
+      "Especialización en Ortodoncia y Ortopedia Maxilar",
+      "Curso de Estética Dental Avanzada",
+    ],
+    bestProducts: [
+      {
+        name: "Blanqueamiento Dental",
+        image: "/dental/blanqueamiento.jpg",
+        description:
+          "Devuelve el brillo natural a tu sonrisa con nuestro tratamiento profesional.",
+        creationVideoUrl: "/videos/blanqueamiento-dental.mp4",
+      },
+      {
+        name: "Ortodoncia Invisible",
+        image: "/dental/ortodoncia.jpg",
+        description:
+          "Corrige la alineación de tus dientes con alineadores transparentes casi invisibles.",
+      },
+      {
+        name: "Implantes Dentales",
+        image: "/dental/implantes.jpg",
+        description:
+          "Recupera la funcionalidad y estética de tu sonrisa con implantes de titanio de alta calidad.",
+      },
+    ],
+    rating: 4.9,
+    comments: [
+      {
+        user: "Lucía M.",
+        comment: "Excelente atención y profesionales muy amables.",
+        rating: 5,
+      },
+      {
+        user: "Carlos T.",
+        comment: "Me encantó el blanqueamiento, mi sonrisa luce increíble.",
+        rating: 5,
+      },
+    ],
+    testimonialVideos: [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    ],
+    environments: [
+      {
+        name: "Sala de Espera Confortable",
+        description:
+          "Un espacio moderno y acogedor con café y revistas mientras esperas tu turno.",
+        image: "/dental/sala-espera.jpg",
+      },
+      {
+        name: "Consultorio Equipado",
+        description:
+          "Tecnología de punta en cada consultorio para garantizar la mejor atención.",
+        image: "/dental/consultorio.jpg",
+      },
+    ],
+    awards: [
+      "Premio a la Excelencia Odontológica 2023",
+      "Mejor Clínica Dental de la Región 2022",
+    ],
+    specialOffers: [
+      {
+        title: "Primera consulta gratuita",
+        description: "Diagnóstico y evaluación sin costo en tu primera visita.",
+        validUntil: "2025-12-31",
+      },
+      {
+        title: "20% de descuento en blanqueamiento",
+        description:
+          "Promoción especial por tiempo limitado en nuestro tratamiento de blanqueamiento dental.",
+        validUntil: "2025-06-30",
+      },
+    ],
+    socialMedia: [
+      {
+        platform: "Instagram",
+        url: "https://www.instagram.com/sonrisaperfectahuancayo",
+      },
+      {
+        platform: "Facebook",
+        url: "https://www.facebook.com/sonrisaperfectahuancayo",
+      },
+    ],
+    phone: "+51 456 789 012",
+    whatsapp: "+51 987 654 321",
+  },
 ];
 
 export interface FilterState {

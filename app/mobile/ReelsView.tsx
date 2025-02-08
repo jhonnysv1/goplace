@@ -173,7 +173,7 @@ export default function ReelsView({
         <div className="absolute top-0 left-0 right-0 z-10 bg-black/50 p-2 flex justify-between items-center">
           <div className="flex items-center space-x-2 text-white">
             <Image
-              src="/huancayo.png?height=24&width=24"
+              src="/logohuancayo.svg"
               alt="Filter icon"
               width={24}
               height={24}
