@@ -73,12 +73,12 @@ export default function BusinessProfileView({
       <div className="relative">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow-md"
+          className="absolute top-3 right-3 z-10 bg-white p-1.5 rounded-full shadow-md"
           aria-label="Cerrar perfil"
         >
-          <X className="w-6 h-6 text-gray-600" />
+          <X className="w-5 h-5 text-gray-600" />
         </button>
-        <div className="h-72 relative">
+        <div className="h-56 relative">
           <Image
             src={
               place.photos[currentPhotoIndex] ||
@@ -90,36 +90,34 @@ export default function BusinessProfileView({
           />
           <button
             onClick={prevPhoto}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-white p-1.5 rounded-full shadow-md"
             aria-label="Foto anterior"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
+            <ChevronLeft className="w-5 h-5 text-gray-600" />
           </button>
           <button
             onClick={nextPhoto}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-white p-1.5 rounded-full shadow-md"
             aria-label="Siguiente foto"
           >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
+            <ChevronRight className="w-5 h-5 text-gray-600" />
           </button>
         </div>
-        <div className="px-6 py-4">
-          <h1 className="text-2xl font-bold text-gray-900 mb-1">
-            {place.name}
-          </h1>
-          <p className="text-gray-600 mb-4">{place.description}</p>
-          <div className="flex items-center space-x-2 text-gray-600 mb-4">
+        <div className="px-6 pt-4">
+          <h1 className="text-xl font-bold text-gray-900 mb-1">{place.name}</h1>
+          <p className="text-gray-600 text-sm mb-4">{place.description}</p>
+          <div className="flex items-center  text-sm space-x-2 text-gray-600 mb-4">
             <MapPin className="w-5 h-5" />
             <span>{place.address}</span>
           </div>
-          <div className="bg-gray-100 p-4 rounded-lg mb-6">
-            <h2 className="text-lg font-semibold mb-2 text-gray-900">
+          <div className="bg-gray-100 p-4 rounded-lg mb-2">
+            <h2 className="text-md font-semibold mb-2 text-gray-900">
               ¿Tienes alguna duda?
             </h2>
             <div className="flex space-x-4">
               <a
                 href={`tel:${place.phone}`}
-                className="flex-1 flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-full"
+                className="flex-1 flex items-center text-sm justify-center bg-blue-500 text-white px-2 py-2 rounded-full"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Llamar
@@ -128,7 +126,7 @@ export default function BusinessProfileView({
                 href={`https://wa.me/${place.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center bg-green-500 text-white px-4 py-2 rounded-full"
+                className="flex-1 flex items-center text-sm justify-center bg-green-500 text-white px-4 py-2 rounded-full"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp
@@ -136,8 +134,8 @@ export default function BusinessProfileView({
             </div>
           </div>
         </div>
-        <nav className="px-6 mb-6">
-          <ul className="flex space-x-6 border-b">
+        <nav className="px-4 border-b overflow-x-auto mb-3 text-sm">
+          <ul className="flex space-x-2 border-b">
             {["info", "products", "environments", "reviews", "map"].map(
               (tab) => (
                 <li key={tab}>
@@ -164,7 +162,7 @@ export default function BusinessProfileView({
             )}
           </ul>
         </nav>
-        <div className="px-6 pb-6">
+        <div className="px-6 pb-6 text-sm">
           {activeTab === "info" && (
             <div className="space-y-6">
               <div>

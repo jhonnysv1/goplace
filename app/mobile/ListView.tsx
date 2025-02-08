@@ -26,11 +26,11 @@ export default function ListView({
   };
 
   return (
-    <div className="h-full flex flex-col bg-gray-100">
+    <div className="h-[calc(100vh-48px)] flex flex-col bg-gray-100 pb-12">
       <div className="bg-white p-2 flex justify-between items-center shadow-md">
         <div className="flex items-center space-x-2 text-gray-700">
           <Image
-            src="/placeholder.svg?height=24&width=24"
+            src="/huancayo.png?height=24&width=24"
             alt="Filter icon"
             width={24}
             height={24}

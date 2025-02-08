@@ -100,7 +100,7 @@ export default function MobileView() {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col pb-12">
       <div className="flex-grow overflow-hidden relative">
         {renderView()}
         {showListMap && selectedPlace && (
@@ -121,7 +121,7 @@ export default function MobileView() {
           </div>
         )}
       </div>
-      <div className="flex-shrink-0">
+      <div className="fixed bottom-0 left-0 right-0 z-20 bg-white shadow-md h-12">
         <BottomNav
           currentView={currentView}
           setCurrentView={setCurrentView}

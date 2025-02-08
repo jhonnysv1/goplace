@@ -159,7 +159,7 @@ export default function ReelsView({
   }
 
   return (
-    <div className="h-full flex flex-col relative bg-black overflow-hidden">
+    <div className="h-[calc(100vh-48px)] flex flex-col relative bg-black overflow-hidden pb-12">
       <AnimatePresence>
         {showProfile && (
           <ProfileView
@@ -246,7 +246,7 @@ export default function ReelsView({
                 <div className="flex-grow bg-black/30 p-3 rounded-lg relative">
                   <div className="absolute bottom-[calc(100%+0.5rem)] right-0 flex flex-col space-y-2">
                     <button className="text-white bg-black/50 p-2 rounded-full">
-                      <Footprints className="w-6 h-6" />
+                      <Footprints className="w-6 h-6" /> Go
                     </button>
                     <button className="text-white bg-black/50 p-2 rounded-full">
                       <MessageCircle className="w-6 h-6" />
